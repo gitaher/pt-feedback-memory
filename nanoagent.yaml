@@ -1,0 +1,24 @@
+_ > nanoagent.plugin.v0001.ManifestConfig:
+id: pt-feedback-memory
+name: PersonalTrader Feedback Memory
+version: 0.1.0
+status: in-development
+spec: nanoagent.plugin/v0001
+runtime > nanoagent.plugin.v0001.RuntimeConfig:
+  type: mcp_stdio
+  command: [uv, run, --frozen, python, -m, plugin]
+permissions > nanoagent.plugin.v0001.PermissionsConfig:
+  network > nanoagent.plugin.v0001.NetworkConfig:
+    hosts: []
+  filesystem > nanoagent.plugin.v0001.FilesystemConfig:
+    write: [workspace]
+tools > dict[contract.Tool, nanoagent.plugin.v0001.ToolConfig]:
+  compute:
+    description: "Retrieve resolved, nonexpired feedback memories using an explicit context score and stable tie breaks."
+tasks > dict[contract.Task, nanoagent.plugin.v0001.TaskConfig]:
+  retrieve-memory:
+    description: "Retrieve resolved, nonexpired feedback memories using an explicit context score and stable tie breaks."
+    runner: agent
+    tools: [compute]
+    reference: null
+    instructions: "Retrieve resolved, nonexpired feedback memories using an explicit context score and stable tie breaks. Return every output field. Tests outcome-driven memory retrieval with fixed model weights, without replaying transactions or computing allocations."

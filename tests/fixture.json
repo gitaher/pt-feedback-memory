@@ -1,0 +1,60 @@
+{
+  "input": {
+    "memories": [
+      {
+        "id": "m1",
+        "profile": "conservative",
+        "symbol": "AAPL",
+        "regime": "bull",
+        "observed_at": "2026-01-01T00:00:00Z",
+        "resolved_at": "2026-01-04T00:00:00Z",
+        "utility": 1
+      },
+      {
+        "id": "m2",
+        "profile": "conservative",
+        "symbol": "MSFT",
+        "regime": "bull",
+        "observed_at": "2026-01-01T00:00:00Z",
+        "resolved_at": "2026-01-05T00:00:00Z",
+        "utility": 9
+      },
+      {
+        "id": "future",
+        "profile": "conservative",
+        "symbol": "AAPL",
+        "regime": "bull",
+        "observed_at": "2026-01-01T00:00:00Z",
+        "resolved_at": "2026-01-06T00:00:00Z",
+        "utility": 100
+      },
+      {
+        "id": "pending",
+        "profile": "conservative",
+        "symbol": "AAPL",
+        "regime": "bull",
+        "observed_at": "2026-01-01T00:00:00Z",
+        "resolved_at": "",
+        "utility": 100
+      }
+    ],
+    "profile": "conservative",
+    "symbol": "AAPL",
+    "regime": "bull",
+    "cutoff": "2026-01-05T00:00:00Z",
+    "ttl_days": 2,
+    "top_k": 2
+  },
+  "gold": {
+    "hits": [
+      {
+        "id": "m1",
+        "score": 7
+      },
+      {
+        "id": "m2",
+        "score": 5
+      }
+    ]
+  }
+}

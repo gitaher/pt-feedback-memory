@@ -1,0 +1,9 @@
+_ > nanoagent.plugin.v0001.ProductConfig:
+tagline: "Retrieve resolved, nonexpired feedback memories using an explicit context score and stable tie breaks."
+summary: "Tests outcome-driven memory retrieval with fixed model weights, without replaying transactions or computing allocations."
+highlights:
+  - "Use a frozen input snapshot without a market-data account"
+  - "Check the answer with a deterministic executable verifier"
+steps:
+  - "Supply the typed input shown in the task documentation"
+  - "Run the task and inspect the verified result"
