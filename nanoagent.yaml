@@ -2,7 +2,7 @@ _ > nanoagent.plugin.v0001.ManifestConfig:
 id: pt-feedback-memory
 name: PersonalTrader Feedback Memory
 version: 0.1.0
-status: in-development
+status: ready
 spec: nanoagent.plugin/v0001
 runtime > nanoagent.plugin.v0001.RuntimeConfig:
   type: mcp_stdio
